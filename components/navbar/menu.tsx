@@ -21,7 +21,7 @@ export default function Menu() {
       />
 
       {isOpen && (
-        <div className="absolute right-4 top-20 bg-[#FFF8EC] shadow-lg rounded-lg p-6 flex flex-col gap-4 text-[#E86A33] text-lg font-medium z-50">
+        <div className="absolute right-4 top-20 bg-[#FFF8EC] shadow-lg rounded-lg p-6 flex flex-col gap-4 text-[#E86A33] text-lg font-medium z-50 font-poppins">
           {NAV_ITEMS.map((item) => (
             <Link
               key={item.href}

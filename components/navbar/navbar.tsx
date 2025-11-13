@@ -17,7 +17,7 @@ export default function Navbar() {
       <div className="hidden lg:flex items-center justify-around h-full mt-2">
         <Logo />
 
-        <nav className="flex items-center justify-center gap-8 text-xl font-semibold">
+        <nav className="flex items-center justify-center gap-8 text-xl font-semibold font-poppins">
           {NAV_ITEMS.map((item) => (
             <UnderlineLink key={item.href} href={item.href}>
               {item.label}
