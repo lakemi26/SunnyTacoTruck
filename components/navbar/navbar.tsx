@@ -8,13 +8,13 @@ export default function Navbar() {
   return (
     <div className="h-20 px-4 md:px-8 lg:px-16 relative text-[#E86A33]">
       {/* Mobile */}
-      <div className="h-full flex items-center justify-between mt-2 lg:hidden">
+      <div className="h-full flex items-center justify-between lg:hidden">
         <Logo />
         <Menu />
       </div>
 
       {/* Desktop */}
-      <div className="hidden lg:flex items-center justify-around h-full mt-2">
+      <div className="hidden lg:flex items-center justify-around h-full">
         <Logo />
 
         <nav className="flex items-center justify-center gap-8 text-xl font-semibold font-poppins">
