@@ -5,7 +5,7 @@ import Tagline from "./tagline";
 
 export default function Hero() {
   return (
-    <section className="w-full bg-[#FFF6E1] py-12">
+    <section className="w-full bg-[#FFF6E1] py-12 shadow-[0_4px_20px_2px_rgba(232,106,51,0.17)]">
       <div className="max-w-[1440px] mx-auto px-4 md:px-8 flex flex-col-reverse xl:flex-row items-center gap-10">
         {/* LEFT SIDE */}
         <div className="flex flex-col gap-6 max-w-xl m-auto">
