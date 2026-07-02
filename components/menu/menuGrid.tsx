@@ -7,7 +7,7 @@ export default function MenuGrid() {
   const { t } = useLanguage();
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8  mt-8 max-w-[1440px]">
+    <div className="flex flex-wrap justify-center gap-5 mt-8">
       <MenuCard
         src="/menu/fish.png"
         title={t("menu.bajaTitle")}

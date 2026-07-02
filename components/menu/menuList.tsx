@@ -9,7 +9,7 @@ export default function MenuList() {
   const { t } = useLanguage();
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
+    <div className="flex flex-col md:flex-row justify-center gap-12 mt-12">
       {/* SIDES */}
       <MenuCategory
         icon={<Image src="/menu/sun.png" alt="sun" width={24} height={24} />}
