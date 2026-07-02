@@ -9,7 +9,7 @@ export default function Footer() {
           rel="noopener noreferrer"
           className="underline hover:opacity-80"
         >
-          Lakemi Studio
+          Lakemi Works
         </a>
       </div>
     </footer>
