@@ -1,30 +1,26 @@
+"use client";
+
+import { useLanguage } from "@/contexts/LanguageContext";
 import MenuCategory from "./menuCategory";
 import MenuItem from "./menuItem";
 import Image from "next/image";
 
 export default function MenuList() {
+  const { t } = useLanguage();
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
       {/* SIDES */}
       <MenuCategory
         icon={<Image src="/menu/sun.png" alt="sun" width={24} height={24} />}
-        title="Sides"
+        title={t("menu.sides")}
       >
+        <MenuItem name={t("menu.friesName")} desc={t("menu.friesDesc")} />
+        <MenuItem name={t("menu.nachosName")} desc={t("menu.nachosDesc")} />
+        <MenuItem name={t("menu.eloteName")} desc={t("menu.eloteDesc")} />
         <MenuItem
-          name="Crunchy Fries"
-          desc="Crispy, golden, and lightly seasoned - a street classic."
-        />
-        <MenuItem
-          name="Cheesy Nachos"
-          desc="Loaded with melted cheese, jalapeños, and that perfect crunch."
-        />
-        <MenuItem
-          name="Elote Cup"
-          desc="Grilled corn with creamy sauce, chili, and lime zest - a fiesta in a cup."
-        />
-        <MenuItem
-          name="Mini Guacamole"
-          desc="Fresh avocado dip served with crunchy tortilla chips."
+          name={t("menu.guacamoleName")}
+          desc={t("menu.guacamoleDesc")}
         />
       </MenuCategory>
 
@@ -33,23 +29,17 @@ export default function MenuList() {
         icon={
           <Image src="/menu/drinks.png" alt="drink" width={24} height={24} />
         }
-        title="Drinks"
+        title={t("menu.drinks")}
       >
+        <MenuItem name={t("menu.mangoName")} desc={t("menu.mangoDesc")} />
+        <MenuItem name={t("menu.lemonName")} desc={t("menu.lemonDesc")} />
         <MenuItem
-          name="Mango Agua Fresca"
-          desc="Refreshing and naturally sweet with tropical mango flavor."
+          name={t("menu.strawberryName")}
+          desc={t("menu.strawberryDesc")}
         />
         <MenuItem
-          name="Lemon-Lime Soda"
-          desc="Sparkling, citrusy, and full of sunshine energy."
-        />
-        <MenuItem
-          name="Strawberry Cooler"
-          desc="Sweet and chilled with a bright berry twist."
-        />
-        <MenuItem
-          name="Tamarind Juice"
-          desc="A tangy-sweet traditional favorite with a tropical touch."
+          name={t("menu.tamarindName")}
+          desc={t("menu.tamarindDesc")}
         />
       </MenuCategory>
     </div>
